@@ -3,6 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
+
+const FirstComponent = () => {
+  return (
+    <div> My first component 1000</div>
+  );
+}
+
 const App = () => {
   const [count, setCount] = useState(0)
 
@@ -17,6 +25,7 @@ const App = () => {
         </a>
       </div>
       <h1>Hello word Vite and reactjs</h1>
+      <FirstComponent/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
